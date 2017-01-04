@@ -27,7 +27,9 @@ export default class ChatCtrl extends Controller {
             text: this.message,
             type : 'text',
             chatId : this.chatId
-        })
+        });
+
+        delete this.message;
     }
     inputUp() {
         if (this.isIOS) {
